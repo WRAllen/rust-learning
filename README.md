@@ -46,3 +46,35 @@
 
 - 熟练使用 trait（泛型、trait bound、trait object）
 - 掌握并发编程（线程、async/await、tokio 等）
+
+
+# 后记
+
+之前都说，掌握一门语言的前提是掌握好另一门语言，我觉得说的很有道理，因为要懂对比，才会学的快，
+
+所以本教程，我会尽量用学过的语言比如go、python等来对比rust，这样既巩固了我的旧语法(哈哈哈)又学习了rust，一石二鸟，美滋滋～
+
+# QuickStart
+
+在本项目的根目录是可以直接运行子目录的代码的，这样方便一边在IDEA上看README和代码，也能直接在根目录跑对应的命令
+
+避免还有cd到对应子目录再运行，下面以01下的第一个hello world作为例子
+
+```
+wangyu2@60305278M [16:44:48] [~/github/rust-learning] [main *]
+-> % cargo run -p hello_world
+   Compiling hello_world v0.1.0 (/Users/wangyu2/github/rust-learning/01_fundamentals/02-HelloWorld/hello_world)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s
+     Running `target/debug/hello_world`
+Hello, world!
+```
+
+-p 这里后面接的是子目录下Cargo.toml里面定义的名字，例如下面的hello_world，和文件/文件夹名称无关
+```
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+```
