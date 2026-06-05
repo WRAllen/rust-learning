@@ -87,7 +87,7 @@ fn main() {
     }
 
     // match 也是表达式，可以返回值
-    let msg = match code {
+    let msg: &str = match code {
         200 => "ok",
         404 => "not found",
         _ => "unknown",
@@ -119,7 +119,7 @@ fn main() {
         _ => println!("n = {}，其他情况", n),
     }
 
-    // guard 也可以让 match 作为表达式返回值
+    // guard 也可以让 match 作为表达式返回值(同基础)
     let score = 85;
     let grade = match score {
         s if s >= 90 => "优秀",
